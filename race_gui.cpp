@@ -1259,7 +1259,7 @@ void RaceGUI::drawMultitouchSpeedRank(const AbstractKart* kart,
     static video::SColor color = video::SColor(255, 255, 255, 255);
  
     char speedM[256], speedI[256];
-    // There is no setting to change units, so display both metric (on top) and imperial units (on bottom)
+    // There is no setting to change units (for now), so display both metric (on top) and imperial units (on bottom)
     sprintf(speedM, "%.1fm/s %.1fkm/h", speed, speed*3.6);
     sprintf(speedI, "%.1fft/s %.1fmph", speed*3.2808, speed*2.2369);
  
