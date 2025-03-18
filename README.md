@@ -3,4 +3,6 @@ Files for a mobile speedometer in SuperTuxKart
 
 Put the race_gui files on stk-code-master/src/state_screens.
 
-TODO: Test the commit "Retire the analogic speedometer in drawMultitouchSpeedRank"
+TODO: Remake the function drawMultitouchSpeedRank. 
+
+The source snippet: https://gitlab.com/-/snippets/1866881
