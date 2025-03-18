@@ -1153,7 +1153,7 @@ void RaceGUI::drawMultitouchSpeedRank(const AbstractKart* kart,
 	
 	drawRank(kart, offset, min_ratio, meter_width, meter_height, dt);
 	 
-	// Draw speed in numbers, above the graphical speedometer (does not use special digit font)
+    // Draw speed in numbers, above the graphical speedometer (does not use special digit font)
 	
     core::recti posM, posI;
  
@@ -1167,6 +1167,7 @@ void RaceGUI::drawMultitouchSpeedRank(const AbstractKart* kart,
     static video::SColor color = video::SColor(255, 255, 255, 255);
  
     char speedM[256], speedI[256];
+	
     // There is no setting to change units (for now), so display both metric (on top) and imperial units (on bottom)
 	
     sprintf(speedM, "%.1fm/s %.1fkm/h", speed, speed*3.6);
@@ -1175,7 +1176,7 @@ void RaceGUI::drawMultitouchSpeedRank(const AbstractKart* kart,
     font->setBlackBorder(true);
     font->draw(core::stringw(speedM).c_str(), posM, color);
     font->draw(core::stringw(speedI).c_str(), posI, color);
-    font->setBlackBorder(false)
+    font->setBlackBorder(false);
 	 
 	if(speed <=0) return;  // Nothing to do if speed is negative.
 	
