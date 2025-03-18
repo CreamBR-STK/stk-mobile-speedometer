@@ -56,6 +56,7 @@ using namespace irr;
 #include "network/protocols/client_lobby.hpp"
 #include "race/race_manager.hpp"
 #include "states_screens/race_gui_multitouch.hpp"
+#include "states_screens/race_gui.hpp"
 #include "tracks/track.hpp"
 #include "tracks/track_object_manager.hpp"
 #include "utils/constants.hpp"
